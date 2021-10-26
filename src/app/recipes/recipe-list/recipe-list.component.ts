@@ -8,7 +8,8 @@ import { Recipe } from '../recipes.model';
 })
 export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [
-    new Recipe('Cuban Fricasee', 'Traditional Cuban Food','https://picsum.photos/200/300')
+    new Recipe('Cuban Fricasee', 'Traditional Cuban Food','https://picsum.photos/200/300'),
+    new Recipe('Mexican Fricasee', 'Traditional Mexican Food','https://picsum.photos/200/300')
   ];
 
   constructor() { }

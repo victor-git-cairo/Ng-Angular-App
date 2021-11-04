@@ -1,9 +1,12 @@
 <div class="is-flex mt-1">
     <div style="height:auto; width: 55%" class="mr-2">
-        <app-recipe-list></app-recipe-list>
+        <app-recipe-list (recipeWasSelected) ="selectedRecipe = $event"></app-recipe-list>
     </div>
     <div style="width: 45%" class="ml-2">
-        <app-recipe-detail></app-recipe-detail>
+        <app-recipe-detail *ngIf="selectedRecipe; else infoText" [recipe]="selectedRecipe"></app-recipe-detail>
+        <ng-template #infoText>
+            <p>Please Select a Recipe</p>
+        </ng-template>
     </div>
 </div>
 

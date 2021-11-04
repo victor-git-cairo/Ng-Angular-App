@@ -1,7 +1,7 @@
 <div class="is-flex is-flex-direction-column">
-  <img src="" alt="">
+  <img [src]="recipe.imagePath" alt={{recipe.name}} style="max-height:400px;">
   <div>
-    <h1>Recipe Names</h1>
+    <h1>{{recipe.name}}</h1>
   </div>
   <div class="dropdown">
     <div class="dropdown-trigger">
@@ -27,7 +27,7 @@
     </div> 
   </div>
   <div>
-    Description
+    {{recipe.description}}
   </div>
   <div>
     Ingredients

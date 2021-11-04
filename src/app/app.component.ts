@@ -4,7 +4,12 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
+
 })
 export class AppComponent {
-  title = 'Recipe Book';
+  loadPage = 'recipe';
+
+  navigateTo(page: string) {
+    this.loadPage = page; 
+  }
 }

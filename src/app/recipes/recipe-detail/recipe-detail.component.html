@@ -1,8 +1,12 @@
 <div class="is-flex is-flex-direction-column">
-  <img [src]="recipe.imagePath" alt={{recipe.name}} style="max-height:400px;">
+  <img [src]="recipe.imagePath" 
+       alt={{recipe.name}} 
+       style="max-height:400px;">
+  
   <div>
     <h1>{{recipe.name}}</h1>
   </div>
+
   <div class="dropdown">
     <div class="dropdown-trigger">
       <button class="button is-primary" aria-haspopup="true" aria-controls="dropdown-menu">
@@ -12,6 +16,7 @@
         </span>
       </button>
     </div>
+
     <div class="dropdown-menu" id="dropdown-menu" role="menu">
       <div class="dropdown-content">
         <a href="#" class="dropdown-item">
@@ -25,14 +30,16 @@
         </a>
       </div>
     </div> 
+
   </div>
+  
   <div>
     {{recipe.description}}
   </div>
   <div>
     Ingredients
   </div>
-  </div>
+</div>
 
 
 

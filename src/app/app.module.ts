@@ -11,6 +11,7 @@ import { ShoppingIngredientComponent } from './shopping/shopping-ingredient/shop
 import { ShoppingEditComponent } from './shopping/shopping-list/shopping-edit/shopping-edit.component';
 import { ShoppingListComponent } from './shopping/shopping-list/shopping-list.component';
 import { HeaderComponent } from './header/header.component';
+import { DropdownDirective } from '../app/shared/dropdown.directive';
 
 @NgModule({
   // new components
@@ -24,6 +25,7 @@ import { HeaderComponent } from './header/header.component';
     ShoppingEditComponent,
     ShoppingListComponent,
     HeaderComponent,
+    DropdownDirective,
   ],
   imports: [
     // import angular built in in Angular

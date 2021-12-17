@@ -19,11 +19,7 @@ export class RecipeDetailComponent implements OnInit {
   }
 
   onAddIngredientsToShoppingList(){
-    console.log('add ingredient to Shopping List')
-    // pass ingrient elements to class method
-   // console.log(...this.recipe.ingredients)
+    console.log('add ingredient to Shopping List method call')
     this.shoppingService.addIngredients(this.recipe.ingredients);
-
   }
-
 }

@@ -37,6 +37,7 @@ export class RecipeService {
   constructor() { }
 
   getRecipes() {
+    console.log('getRecipe method call');
     return this.recipes.slice();
   }
 

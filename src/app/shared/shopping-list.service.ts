@@ -15,12 +15,11 @@ export class ShoppingListService {
 
   getIngredients() {
     console.log('getIngredient method call')
-    console.log(this.ingredients.slice());
     return this.ingredients.slice();
   }
 
   onIngredientAdded(ingredient: Ingredient){
-    // debugger;
+    console.log('onIngredientAdded method call');
     this.ingredients.push(ingredient);
     this.ingredientAdded.emit(this.ingredients.slice())
   }

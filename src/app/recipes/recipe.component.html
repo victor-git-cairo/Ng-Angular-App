@@ -2,7 +2,7 @@
     <div style="height:auto; width: 55%" class="mr-2">
         <app-recipe-list></app-recipe-list>
     </div>
-    <div style="width: 45%" class="ml-2">
+    <!-- <div style="width: 45%" class="ml-2">
         <app-recipe-detail
            *ngIf="selectedRecipe; else infoText" 
            [recipe]="selectedRecipe">
@@ -10,7 +10,11 @@
         <ng-template #infoText>
             <p>Please Select a Recipe</p>
         </ng-template>
+    </div> -->
+    <div style="width: 45%" class="ml-2">
+        <router-outlet></router-outlet>
     </div>
+
 </div>
 
 

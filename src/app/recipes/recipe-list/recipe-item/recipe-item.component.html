@@ -1,13 +1,12 @@
 <!-- <p>recipe-item works!</p> -->
-<div>
-    <a style ="cursor: pointer">
-    <div class="is-flex" >
-        <div id="recipe-info" class="has-background-grey-light pl-1 mr-1 mb-2">
+<div class="is-flex">
+     <a style="cursor: pointer"
+        [routerLink]="[index]" 
+        routerLinkActive="active">  
+        <div id="recipe-info" class="info pl-1 mr-0 mb-2">
             <h4>{{recipe.name}}</h4>
             <p>{{recipe.description}}</p>
         </div>
-        <img src="{{ recipe.imagePath }}" alt="{{ recipe.name }}" class="ml-1" style="max-height: 70px">
-    </div>
-</a>
+     </a>
+     <img src="{{ recipe.imagePath }}" alt="{{ recipe.name }}" class="ml-1" style="max-height: 70px">
 </div>
-

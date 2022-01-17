@@ -2,4 +2,21 @@ div {
     height: 70px;
     width: 400px;
     margin-bottom: 3px;
+
 }
+.info {
+    border: 1px solid black;
+     background-color: transparent;
+     /* background-color: hsl(204, 71%, 39%); */
+}
+
+.info h4, .info p {
+    color: black;
+    font-weight: 500;
+}
+
+.active {
+    background-color: hsl(204, 71%, 39%)!important;
+}
+
+  /* [routerLinkActive]="['active']" */

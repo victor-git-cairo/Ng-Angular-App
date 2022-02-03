@@ -1,5 +1,6 @@
-<app-header (selectedOption)="navigateTo($event)"></app-header>
+<app-header></app-header>
 <div class="container is-fluid">
-  <app-recipe *ngIf="loadPage ==='recipe'"></app-recipe>
-  <app-shopping-list *ngIf="loadPage !=='recipe'"></app-shopping-list>
+  <!-- <app-recipe *ngIf="loadPage ==='recipe'"></app-recipe>
+  <app-shopping-list *ngIf="loadPage !=='recipe'"></app-shopping-list> -->
+  <router-outlet></router-outlet>
 </div>

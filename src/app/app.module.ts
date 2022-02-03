@@ -14,6 +14,9 @@ import { HeaderComponent } from './header/header.component';
 import { DropdownDirective } from '../app/shared/dropdown.directive';
 import { ShoppingListService } from './shared/shopping-list.service';
 import { RecipeService } from './shared/recipe.service';
+import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   // new components
@@ -28,11 +31,14 @@ import { RecipeService } from './shared/recipe.service';
     ShoppingListComponent,
     HeaderComponent,
     DropdownDirective,
+    RecipeStartComponent,
+    RecipeEditComponent,
   ],
   imports: [
     // import angular built in in Angular
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [ShoppingListService, RecipeService],
   bootstrap: [AppComponent]

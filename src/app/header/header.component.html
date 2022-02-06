@@ -1,42 +1,38 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<div class="panel">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://bulma.io">
+      <a class="navbar-item" href="#">
         <!-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"> -->
-        Recipe Book
+        Cookbook
       </a>
-  
+
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
     </div>
-  
+
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-          <a class="navbar-item" 
-             routerLinkActive="active-link" 
-             routerLink="/recipes">
+        <a class="navbar-item" routerLinkActive="active-link" routerLink="/recipes">
           Recipes
-          </a>       
+        </a>
 
-        <a class="navbar-item" 
-           routerLinkActive="active-link" 
-           router
-           routerLink="/shopping-list">
-           Shopping List
-        </a>    
-  
+        <a class="navbar-item" routerLinkActive="active-link" router routerLink="/shopping-list">
+          Shopping List
+        </a>
+
         <!-- dropdown menu option -->
         <div class="dropdown" appDropdown>
 
-             <div class="navbar-item has-dropdown">
-              <a class="navbar-link">
-                Manage
-              </a> 
-            </div>
-    
-             <div class="dropdown-menu" id="dropdown-menu" role="menu">
+          <div class="navbar-item has-dropdown">
+            <a class="navbar-link">
+              Manage
+            </a>
+          </div>
+
+          <div class="dropdown-menu" id="dropdown-menu" role="menu">
             <div class="dropdown-content">
               <a class="navbar-item" (click)="printSomething()">
                 Save Data
@@ -45,19 +41,11 @@
               <a class="navbar-item">
                 Fetch Data
               </a>
-          </div> 
-        </div> 
-
+            </div>
+          </div>
         </div>
- 
+      </div>
 
-
-  
-
-
- 
-      </div> 
-  
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
@@ -72,3 +60,4 @@
       </div>
     </div>
   </nav>
+</div>

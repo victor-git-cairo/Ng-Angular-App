@@ -11,6 +11,6 @@ export class DropdownDirective {
   @HostBinding('class.is-active') isActive: boolean = false;
 
   @HostListener('click') toggleActive() {
-   this.isActive = !this.isActive;
+    this.isActive = !this.isActive;
   }
 }

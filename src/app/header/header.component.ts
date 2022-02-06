@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
   //   this.selectedOption.emit(option)
   // }
 
-  printSomething(){
+  printSomething() {
     console.log('Print')
   }
 }

@@ -10,27 +10,38 @@ export class RecipeService {
 
   private recipes: Recipe[] = [
     new Recipe(
-      'Cuban Fricasee', 
+      'Cuban Fricasee',
       'Popular Cuban Food',
-      'https://source.unsplash.com/random/200x300/?food=7',
+      'https://source.unsplash.com/random/600x600/?food=7',
       [
         new Ingredient('Congris', 1),
         new Ingredient('Pollo En Salsa', 1),
         new Ingredient('Yuca Mojo', 1),
         new Ingredient('Salsa', 1)
-      ]    
+      ]
     ),
-    
+
     new Recipe(
-      'Chicken Enchiladas', 
+      'Chicken Enchiladas',
       'Popular Mexican Food',
-      'https://picsum.photos/200/300',
+      'https://picsum.photos/600/600',
       [
         new Ingredient('Pound Tomatillos', 1),
         new Ingredient('Garlic Cloves', 4),
         new Ingredient('Jalapenos', 2),
-        new Ingredient('tea spoon salt', 1/2)     
+        new Ingredient('tea spoon salt', 1 / 2)
       ]
+    ),
+
+    new Recipe(
+      'Ajiaco Cubano',
+      'Popular Cuban Dish',
+      'https://picsum.photos/600/600',
+      [
+        new Ingredient('Boniato', 11),
+        new Ingredient('Yuca', 10),
+        new Ingredient('Calabaza', 20),
+        new Ingredient('Platanos Macho', 10)     ]
     )
   ];
 
@@ -41,7 +52,7 @@ export class RecipeService {
     return this.recipes.slice();
   }
 
-  getRecipesById (id: number) {
-    return this.recipes[id]; 
-  }  
+  getRecipesById(id: number) {
+    return this.recipes[id];
+  }
 }

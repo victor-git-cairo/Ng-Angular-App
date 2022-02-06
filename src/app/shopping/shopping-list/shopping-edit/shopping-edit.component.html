@@ -1,51 +1,39 @@
-<div class="columns">
-    <div class="column is-half">
-        <form (ngSubmit) = "onAddItem(formInfo)" #formInfo="ngForm">
-            <div class="is-flex is-flex-direction-row">
-                <div class="field mr-3">
-                    <label class="label">Name</label>
-                    <div class="control">
-                        <input 
-                           class="input" 
-                           type="text" 
-                           placeholder="Enter name"
-                           id="name"
-                           name="name"
-                           ngModel
-                           required
-                        >
-                    </div>
+<div>
+    <form (ngSubmit)="onAddItem(formInfo)" #formInfo="ngForm">
+        <div class="is-flex is-flex-direction-row">
+            <div class="field mr-3">
+                <label class="label">Name</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Enter name" id="name" name="name" ngModel required>
                 </div>
-                <div class="field  mr-3">
-                    <label class="label">Amount</label>
-                    <div class="control">
-                        <input 
-                           class="input" 
-                           type="number" 
-                           placeholder="Amount"
-                           ngModel
-                           name="amount"
-                           Id="amount"
-                           required
-                           pattern="[0-9]+"
-                        >
-                    </div>
-                </div>              
             </div>
-            <div class="is-flex is-flex-direction-row">
-                <button class="button" class="button is-success mr-2"[disabled]="!formInfo.valid" type="submit">
-                    {{ editMode ? "Update" : "Add"}}</button>
-                <button  
-                    class="button" 
-                    class="button is-danger mr-2" 
-                    type="button" 
-                    (click)=onDelete()
-                    *ngIf="editMode">
-                    Delete
-                </button>
-                <button class="button" class="button is-danger-light mr-2"type="button" (click)=onClear()>Clear</button> 
+            <div class="field  mr-3">
+                <label class="label">Amount</label>
+                <div class="control">
+                    <input class="input" type="number" placeholder="Amount" ngModel name="amount" Id="amount" required
+                        pattern="[0-9]+">
+                </div>
             </div>
-        </form>
-    </div>
+        </div>
+        <div class="is-flex is-flex-direction-row">
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-success mr-2 is-normal" [disabled]="!formInfo.valid" type="submit">
+                        {{ editMode ? "Update" : "Add"}}</button>
+                </div>
 
+                <div class="control ">
+                    <button class="button is-danger mr-2" type="button" (click)=onDelete()
+                        *ngIf="editMode">
+                        Delete
+                    </button>
+                </div>
+
+                <div class="control">
+                    <button class="button is-danger-light mr-2" type="button"
+                        (click)=onClear()>Clear</button>
+                </div>
+            </div>
+        </div>
+    </form>
 </div>

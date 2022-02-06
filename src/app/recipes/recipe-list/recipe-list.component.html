@@ -1,11 +1,9 @@
-<div class="is-flex is-flex-direction-column">
-    <div>
-        <button (click)="onNewRecipe()" class="button is-primary">New Recipe</button>
+<div>
+    <!-- <div class="is-flex is-flex-direction-column"> -->
+    <div class="column">
+        <button (click)="onNewRecipe()" class="button is-primary mb-2">New Recipe</button>
     </div>
-    <hr>
-    <app-recipe-item *ngFor="let recipeEl of recipes; let i = index"
-    [recipe] = "recipeEl" 
-    [index] = "i"
-   >
-   </app-recipe-item>
+    <!-- <hr> -->
+    <app-recipe-item *ngFor="let recipeEl of recipes; let i = index" [recipe]="recipeEl" [index]="i">
+    </app-recipe-item>
 </div>

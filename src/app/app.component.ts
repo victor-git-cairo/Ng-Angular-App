@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 
 })
 export class AppComponent {
-  loadPage = 'recipe';
+  // loadPage = 'recipe';
 
-  navigateTo(page: string) {
-    this.loadPage = page; 
-  }
+  // navigateTo(page: string) {
+  //   this.loadPage = page; 
+  // }
 }

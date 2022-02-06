@@ -1,6 +1,16 @@
-<app-header></app-header>
-<div class="container is-fluid">
-  <!-- <app-recipe *ngIf="loadPage ==='recipe'"></app-recipe>
-  <app-shopping-list *ngIf="loadPage !=='recipe'"></app-shopping-list> -->
-  <router-outlet></router-outlet>
-</div>
+  <div class="container">
+    <app-header></app-header>
+  </div>
+  <hr>
+  <section class="columns">
+    <div class="container">
+
+      <div class="column">
+        <!-- <div class="container is-fluid"> -->
+        <!-- <app-recipe *ngIf="loadPage ==='recipe'"></app-recipe>
+        <app-shopping-list *ngIf="loadPage !=='recipe'"></app-shopping-list> -->
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </section>
+

@@ -16,7 +16,7 @@ import { ShoppingListService } from './shared/shopping-list.service';
 import { RecipeService } from './shared/recipe.service';
 import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   // new components
@@ -38,6 +38,7 @@ import { FormsModule } from '@angular/forms';
     // import angular built in in Angular
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     FormsModule
   ],
   providers: [ShoppingListService, RecipeService],

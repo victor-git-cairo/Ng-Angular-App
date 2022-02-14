@@ -20,7 +20,6 @@ export class RecipeService {
         new Ingredient('Salsa', 1)
       ]
     ),
-
     new Recipe(
       'Chicken Enchiladas',
       'Popular Mexican Food',
@@ -32,7 +31,6 @@ export class RecipeService {
         new Ingredient('tea spoon salt', 1 / 2)
       ]
     ),
-
     new Recipe(
       'Ajiaco Cubano',
       'Popular Cuban Dish',

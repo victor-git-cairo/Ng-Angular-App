@@ -21,10 +21,10 @@
           Shopping List
         </a>
 
-        <a class="dropdown-item" [routerLink]="['edit']">
+        <a class="dropdown-item" [routerLink]="['edit']" (click)=" onEditRecipe()">
           Edit Recipe
         </a>
-        <a class="dropdown-item is-active">
+        <a class="dropdown-item is-active" (click)="onDeleteRecipe()">
           Delete Recipe
         </a>
       </div>
